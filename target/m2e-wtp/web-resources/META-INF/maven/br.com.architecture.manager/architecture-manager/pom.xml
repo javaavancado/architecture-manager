@@ -189,7 +189,7 @@
         <dependency>
             <groupId>org.hibernate.javax.persistence</groupId>
             <artifactId>hibernate-jpa-2.0-api</artifactId>
-            <scope>provided</scope>
+            <version>1.0.1.Final-redhat-3</version>
         </dependency>
 
         <!-- JSR-303 (Bean Validation) Implementation -->
@@ -318,11 +318,6 @@
         </dependency>
 
         <!-- Add H2 dependency for embedded testing database -->
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>test</scope>
-        </dependency>
 
         <!-- Add JSON dependency, specified in jboss-deployment-structure.xml -->
         <dependency>
@@ -338,6 +333,21 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
+        </dependency>
+        <dependency>
+        	<groupId>org.postgresql</groupId>
+        	<artifactId>postgresql</artifactId>
+        	<version>9.4-1201-jdbc41</version>
+        </dependency>
+        <dependency>
+        	<groupId>com.sun.faces</groupId>
+        	<artifactId>jsf-impl</artifactId>
+        	<version>2.2.14</version>
+        </dependency>
+        <dependency>
+        	<groupId>com.sun.faces</groupId>
+        	<artifactId>jsf-api</artifactId>
+        	<version>2.2.14</version>
         </dependency>
     </dependencies>
 
